@@ -1,0 +1,100 @@
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x55ba51480640] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/basketball.2.2982.1280x720.420':
+  Duration: 00:00:10.03, start: 0.000000, bitrate: 329785 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x720, 329785 kb/s, 29.82 tbr, 29.82 tbn, 29.82 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55ba5148c3c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x55ba5148c3c0] profile Main, level 3.1
+[libx264 @ 0x55ba5148c3c0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=2 psy=0 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=abr mbtree=1 bitrate=256 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/basketball.2.2982.1280x720.420_256.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720, q=-1--1, 256 kb/s, 29.82 fps, 11928 tbn, 29.82 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/256000 buffer size: 0 vbv_delay: -1
+frame=   72 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  116 fps=105 q=64.0 size=      63kB time=00:00:01.07 bitrate= 477.8kbits/s speed=0.971x    frame=  161 fps=100 q=65.0 size=     111kB time=00:00:02.58 bitrate= 352.2kbits/s speed=1.61x    frame=  210 fps= 99 q=64.0 size=     155kB time=00:00:04.22 bitrate= 300.0kbits/s speed=1.98x    frame=  276 fps=105 q=63.0 size=     206kB time=00:00:06.43 bitrate= 262.4kbits/s speed=2.45x    frame=  298 fps= 97 q=-1.0 Lsize=     278kB time=00:00:09.89 bitrate= 230.1kbits/s speed=3.21x    
+video:274kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.407291%
+[libx264 @ 0x55ba5148c3c0] frame I:2     Avg QP:46.75  size: 13902
+[libx264 @ 0x55ba5148c3c0] frame P:89    Avg QP:50.78  size:  1571
+[libx264 @ 0x55ba5148c3c0] frame B:207   Avg QP:50.98  size:   542
+[libx264 @ 0x55ba5148c3c0] consecutive B-frames:  4.7% 13.4% 19.1% 22.8% 15.1% 22.1%  0.0%  2.7%  0.0%
+[libx264 @ 0x55ba5148c3c0] mb I  I16..4: 84.5%  0.0% 15.5%
+[libx264 @ 0x55ba5148c3c0] mb P  I16..4:  6.5%  0.0%  0.0%  P16..4: 12.4%  0.0%  0.0%  0.0%  0.0%    skip:81.1%
+[libx264 @ 0x55ba5148c3c0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  5.3%  0.0%  0.0%  direct: 1.5%  skip:93.2%  L0:44.0% L1:55.5% BI: 0.5%
+[libx264 @ 0x55ba5148c3c0] final ratefactor: 55.08
+[libx264 @ 0x55ba5148c3c0] direct mvs  spatial:78.7% temporal:21.3%
+[libx264 @ 0x55ba5148c3c0] coded y,uvDC,uvAC intra: 11.1% 32.2% 2.2% inter: 0.5% 1.3% 0.0%
+[libx264 @ 0x55ba5148c3c0] i16 v,h,dc,p: 54% 31% 12%  3%
+[libx264 @ 0x55ba5148c3c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 23% 22%  5%  5%  5%  6%  4%  5%
+[libx264 @ 0x55ba5148c3c0] i8c dc,h,v,p: 95%  3%  2%  0%
+[libx264 @ 0x55ba5148c3c0] Weighted P-Frames: Y:5.6% UV:3.4%
+[libx264 @ 0x55ba5148c3c0] kb/s:224.04
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x556cf6af2720] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/basketball.2.2982.1280x720.420':
+  Duration: 00:00:10.03, start: 0.000000, bitrate: 329785 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x720, 329785 kb/s, 29.82 tbr, 29.82 tbn, 29.82 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x556cf6afeec0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x556cf6afeec0] profile High, level 5.0
+[libx264 @ 0x556cf6afeec0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=10 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=2pass mbtree=1 bitrate=256 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 cplxblur=20.0 qblur=0.5 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/basketball.2.2982.1280x720.420_256.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720, q=-1--1, 256 kb/s, 29.82 fps, 11928 tbn, 29.82 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/256000 buffer size: 0 vbv_delay: -1
+frame=   47 fps=0.0 q=56.0 PSNR=Y:nan U:nan V:nan *:nan size=      24kB time=00:00:00.80 bitrate= 239.4kbits/s speed=1.58x    frame=   71 fps= 69 q=54.0 PSNR=Y:nan U:nan V:nan *:nan size=      46kB time=00:00:01.60 bitrate= 236.2kbits/s speed=1.56x    frame=   92 fps= 60 q=54.0 PSNR=Y:nan U:nan V:nan *:nan size=      71kB time=00:00:02.31 bitrate= 249.9kbits/s speed= 1.5x    frame=  119 fps= 58 q=54.0 PSNR=Y:nan U:nan V:nan *:nan size=     100kB time=00:00:03.21 bitrate= 254.9kbits/s speed=1.57x    frame=  145 fps= 57 q=54.0 PSNR=Y:nan U:nan V:nan *:nan size=     124kB time=00:00:04.09 bitrate= 248.0kbits/s speed= 1.6x    frame=  170 fps= 55 q=54.0 PSNR=Y:nan U:nan V:nan *:nan size=     145kB time=00:00:04.92 bitrate= 240.9kbits/s speed=1.61x    frame=  200 fps= 56 q=53.0 PSNR=Y:nan U:nan V:nan *:nan size=     166kB time=00:00:05.93 bitrate= 228.5kbits/s speed=1.65x    frame=  230 fps= 56 q=52.0 PSNR=Y:nan U:nan V:nan *:nan size=     189kB time=00:00:06.94 bitrate= 222.7kbits/s speed=1.69x    frame=  260 fps= 56 q=50.0 PSNR=Y:nan U:nan V:nan *:nan size=     206kB time=00:00:07.94 bitrate= 212.3kbits/s speed=1.72x    frame=  298 fps= 57 q=-1.0 LPSNR=Y:inf U:inf V:inf *:inf size=     267kB time=00:00:09.89 bitrate= 220.9kbits/s speed=1.88x    
+video:263kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.468304%
+[libx264 @ 0x556cf6afeec0] frame I:2     Avg QP:47.33  size: 11539  PSNR Mean Y:24.79 U:35.52 V:36.30 Avg:26.38 Global:25.66
+[libx264 @ 0x556cf6afeec0] frame P:89    Avg QP:49.22  size:  1866  PSNR Mean Y:24.60 U:35.60 V:36.46 Avg:26.21 Global:26.05
+[libx264 @ 0x556cf6afeec0] frame B:207   Avg QP:50.79  size:   383  PSNR Mean Y:24.12 U:35.48 V:36.15 Avg:25.73 Global:25.44
+[libx264 @ 0x556cf6afeec0] consecutive B-frames:  4.7% 13.4% 19.1% 22.8% 15.1% 22.1%  0.0%  2.7%  0.0%
+[libx264 @ 0x556cf6afeec0] mb I  I16..4: 51.2% 44.7%  4.2%
+[libx264 @ 0x556cf6afeec0] mb P  I16..4:  4.7%  4.8%  0.0%  P16..4: 16.1%  0.7%  1.6%  0.0%  0.0%    skip:72.1%
+[libx264 @ 0x556cf6afeec0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  8.1%  0.3%  0.0%  direct: 0.0%  skip:91.6%  L0:39.1% L1:60.6% BI: 0.3%
+[libx264 @ 0x556cf6afeec0] 8x8 transform intra:49.4% inter:90.3%
+[libx264 @ 0x556cf6afeec0] direct mvs  spatial:70.5% temporal:29.5%
+[libx264 @ 0x556cf6afeec0] coded y,uvDC,uvAC intra: 6.0% 18.7% 1.8% inter: 0.4% 1.1% 0.0%
+[libx264 @ 0x556cf6afeec0] i16 v,h,dc,p: 43% 38%  9% 10%
+[libx264 @ 0x556cf6afeec0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  6%  5% 81%  1%  1%  2%  1%  1%  1%
+[libx264 @ 0x556cf6afeec0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 19% 19%  4%  5%  6%  5%  4%  4%
+[libx264 @ 0x556cf6afeec0] i8c dc,h,v,p: 91%  6%  2%  1%
+[libx264 @ 0x556cf6afeec0] Weighted P-Frames: Y:5.6% UV:3.4%
+[libx264 @ 0x556cf6afeec0] ref P L0: 73.7%  0.9% 11.1%  3.2%  2.6%  2.1%  2.0%  0.6%  0.7%  0.6%  0.6%  0.5%  0.4%  0.4%  0.4%  0.2%
+[libx264 @ 0x556cf6afeec0] ref B L0: 88.1%  6.8%  3.0%  0.5%  0.4%  0.3%  0.3%  0.1%  0.1%  0.1%  0.1%  0.1%  0.1%  0.1%  0.0%
+[libx264 @ 0x556cf6afeec0] ref B L1: 97.6%  2.4%
+[libx264 @ 0x556cf6afeec0] PSNR Mean Y:24.269 U:35.515 V:36.246 Avg:25.880 Global:25.613 kb/s:214.90

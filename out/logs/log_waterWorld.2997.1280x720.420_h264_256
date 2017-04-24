@@ -1,0 +1,100 @@
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x55f73bb44640] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/waterWorld.2997.1280x720.420':
+  Duration: 00:00:16.92, start: 0.000000, bitrate: 331444 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x720, 331444 kb/s, 29.97 tbr, 29.97 tbn, 29.97 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55f73bb503c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x55f73bb503c0] profile Main, level 3.1
+[libx264 @ 0x55f73bb503c0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=2 psy=0 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=5 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=abr mbtree=1 bitrate=256 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/waterWorld.2997.1280x720.420_256.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720, q=-1--1, 256 kb/s, 29.97 fps, 30k tbn, 29.97 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/256000 buffer size: 0 vbv_delay: -1
+frame=   72 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  114 fps=102 q=67.0 size=      67kB time=00:00:01.00 bitrate= 545.5kbits/s speed=0.898x    frame=  160 fps= 97 q=64.0 size=     102kB time=00:00:02.53 bitrate= 328.2kbits/s speed=1.53x    frame=  206 fps= 95 q=64.0 size=     141kB time=00:00:04.07 bitrate= 284.7kbits/s speed=1.88x    frame=  255 fps= 93 q=64.0 size=     193kB time=00:00:05.70 bitrate= 277.5kbits/s speed=2.09x    frame=  300 fps= 90 q=-1.0 Lsize=     322kB time=00:00:09.90 bitrate= 266.0kbits/s speed=2.97x    
+video:318kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.170084%
+[libx264 @ 0x55f73bb503c0] frame I:2     Avg QP:47.21  size: 15324
+[libx264 @ 0x55f73bb503c0] frame P:98    Avg QP:50.82  size:  1550
+[libx264 @ 0x55f73bb503c0] frame B:200   Avg QP:51.00  size:   712
+[libx264 @ 0x55f73bb503c0] consecutive B-frames: 10.7% 14.0% 10.0% 12.0% 13.3% 40.0%  0.0%  0.0%  0.0%
+[libx264 @ 0x55f73bb503c0] mb I  I16..4: 85.2%  0.0% 14.8%
+[libx264 @ 0x55f73bb503c0] mb P  I16..4:  8.3%  0.0%  0.0%  P16..4: 11.6%  0.0%  0.0%  0.0%  0.0%    skip:80.1%
+[libx264 @ 0x55f73bb503c0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  7.4%  0.0%  0.0%  direct: 2.2%  skip:90.4%  L0:49.1% L1:50.7% BI: 0.1%
+[libx264 @ 0x55f73bb503c0] final ratefactor: 57.02
+[libx264 @ 0x55f73bb503c0] direct mvs  spatial:98.5% temporal:1.5%
+[libx264 @ 0x55f73bb503c0] coded y,uvDC,uvAC intra: 13.1% 28.4% 0.6% inter: 0.7% 0.8% 0.0%
+[libx264 @ 0x55f73bb503c0] i16 v,h,dc,p: 52% 33% 13%  3%
+[libx264 @ 0x55f73bb503c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 23% 20%  5%  5%  6%  6%  5%  4%
+[libx264 @ 0x55f73bb503c0] i8c dc,h,v,p: 95%  3%  1%  0%
+[libx264 @ 0x55f73bb503c0] Weighted P-Frames: Y:11.2% UV:4.1%
+[libx264 @ 0x55f73bb503c0] kb/s:259.76
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x55ea4e74d720] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/waterWorld.2997.1280x720.420':
+  Duration: 00:00:16.92, start: 0.000000, bitrate: 331444 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x720, 331444 kb/s, 29.97 tbr, 29.97 tbn, 29.97 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55ea4e759ec0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x55ea4e759ec0] profile High, level 5.0
+[libx264 @ 0x55ea4e759ec0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=10 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=2pass mbtree=1 bitrate=256 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 cplxblur=20.0 qblur=0.5 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/waterWorld.2997.1280x720.420_256.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x720, q=-1--1, 256 kb/s, 29.97 fps, 30k tbn, 29.97 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/256000 buffer size: 0 vbv_delay: -1
+frame=   39 fps=0.0 q=63.0 PSNR=Y:nan U:nan V:nan *:nan size=      24kB time=00:00:00.53 bitrate= 362.0kbits/s speed=0.96x    frame=   58 fps= 53 q=61.0 PSNR=Y:nan U:nan V:nan *:nan size=      42kB time=00:00:01.16 bitrate= 295.1kbits/s speed=1.07x    frame=   73 fps= 46 q=62.0 PSNR=Y:nan U:nan V:nan *:nan size=      60kB time=00:00:01.66 bitrate= 295.5kbits/s speed=1.05x    frame=   99 fps= 47 q=61.0 PSNR=Y:nan U:nan V:nan *:nan size=      74kB time=00:00:02.53 bitrate= 239.9kbits/s speed=1.21x    frame=  119 fps= 46 q=61.0 PSNR=Y:nan U:nan V:nan *:nan size=      86kB time=00:00:03.20 bitrate= 220.8kbits/s speed=1.23x    frame=  148 fps= 47 q=59.0 PSNR=Y:nan U:nan V:nan *:nan size=     101kB time=00:00:04.17 bitrate= 197.6kbits/s speed=1.34x    frame=  178 fps= 48 q=58.0 PSNR=Y:nan U:nan V:nan *:nan size=     117kB time=00:00:05.17 bitrate= 184.9kbits/s speed=1.39x    frame=  199 fps= 47 q=57.0 PSNR=Y:nan U:nan V:nan *:nan size=     136kB time=00:00:05.87 bitrate= 189.8kbits/s speed=1.38x    frame=  224 fps= 47 q=57.0 PSNR=Y:nan U:nan V:nan *:nan size=     154kB time=00:00:06.70 bitrate= 187.6kbits/s speed=1.41x    frame=  244 fps= 46 q=56.0 PSNR=Y:nan U:nan V:nan *:nan size=     167kB time=00:00:07.37 bitrate= 185.1kbits/s speed= 1.4x    frame=  279 fps= 48 q=55.0 PSNR=Y:nan U:nan V:nan *:nan size=     195kB time=00:00:08.54 bitrate= 187.3kbits/s speed=1.48x    frame=  300 fps= 47 q=-1.0 LPSNR=Y:inf U:inf V:inf *:inf size=     231kB time=00:00:09.90 bitrate= 190.9kbits/s speed=1.54x    
+video:227kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.639457%
+[libx264 @ 0x55ea4e759ec0] frame I:2     Avg QP:50.44  size:  5026  PSNR Mean Y:21.14 U:36.62 V:37.17 Avg:22.84 Global:22.44
+[libx264 @ 0x55ea4e759ec0] frame P:98    Avg QP:50.83  size:  1657  PSNR Mean Y:20.51 U:36.05 V:36.47 Avg:22.22 Global:22.07
+[libx264 @ 0x55ea4e759ec0] frame B:200   Avg QP:50.99  size:   298  PSNR Mean Y:20.14 U:35.98 V:36.49 Avg:21.85 Global:21.61
+[libx264 @ 0x55ea4e759ec0] consecutive B-frames: 10.7% 14.0% 10.0% 12.0% 13.3% 40.0%  0.0%  0.0%  0.0%
+[libx264 @ 0x55ea4e759ec0] mb I  I16..4: 63.2% 36.4%  0.5%
+[libx264 @ 0x55ea4e759ec0] mb P  I16..4: 15.4%  8.5%  0.0%  P16..4: 10.8%  0.2%  0.7%  0.0%  0.0%    skip:64.3%
+[libx264 @ 0x55ea4e759ec0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  7.2%  0.0%  0.0%  direct: 0.0%  skip:92.8%  L0:39.1% L1:60.8% BI: 0.0%
+[libx264 @ 0x55ea4e759ec0] 8x8 transform intra:35.7% inter:96.7%
+[libx264 @ 0x55ea4e759ec0] direct mvs  spatial:87.5% temporal:12.5%
+[libx264 @ 0x55ea4e759ec0] coded y,uvDC,uvAC intra: 1.4% 16.6% 0.0% inter: 0.1% 0.3% 0.0%
+[libx264 @ 0x55ea4e759ec0] i16 v,h,dc,p: 51% 35%  7%  7%
+[libx264 @ 0x55ea4e759ec0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  3%  2% 93%  0%  0%  0%  0%  0%  1%
+[libx264 @ 0x55ea4e759ec0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 23% 27%  3%  1%  1%  1%  1%  1%
+[libx264 @ 0x55ea4e759ec0] i8c dc,h,v,p: 95%  5%  1%  0%
+[libx264 @ 0x55ea4e759ec0] Weighted P-Frames: Y:11.2% UV:4.1%
+[libx264 @ 0x55ea4e759ec0] ref P L0: 66.9%  0.3% 13.0%  5.4%  3.2%  2.9%  2.5%  0.8%  0.9%  0.7%  0.7%  0.7%  0.6%  0.5%  0.6%  0.3%
+[libx264 @ 0x55ea4e759ec0] ref B L0: 87.8%  5.8%  4.0%  0.4%  0.6%  0.5%  0.3%  0.1%  0.1%  0.1%  0.0%  0.1%  0.1%  0.1%  0.1%
+[libx264 @ 0x55ea4e759ec0] ref B L1: 91.1%  8.9%
+[libx264 @ 0x55ea4e759ec0] PSNR Mean Y:20.269 U:36.004 V:36.488 Avg:21.974 Global:21.762 kb/s:185.40

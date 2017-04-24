@@ -1,0 +1,100 @@
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x55a62ebbe640] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/tears.of.steel.end.24.1280x534.420':
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 196853 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x534, 196853 kb/s, 24 tbr, 24 tbn, 24 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55a62ebca3c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x55a62ebca3c0] profile Main, level 3.1
+[libx264 @ 0x55a62ebca3c0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=2 psy=0 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=abr mbtree=1 bitrate=1792 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/tears.of.steel.end.24.1280x534.420_1792.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x534, q=-1--1, 1792 kb/s, 24 fps, 12288 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/1792000 buffer size: 0 vbv_delay: -1
+frame=   87 fps=0.0 q=35.0 size=     167kB time=00:00:00.12 bitrate=10963.1kbits/s speed=0.234x    frame=  143 fps=137 q=32.0 size=     566kB time=00:00:02.45 bitrate=1885.4kbits/s speed=2.35x    frame=  197 fps=127 q=32.0 size=    1058kB time=00:00:04.70 bitrate=1840.8kbits/s speed=3.03x    frame=  240 fps=113 q=-1.0 Lsize=    2120kB time=00:00:09.87 bitrate=1758.6kbits/s speed=4.64x    
+video:2116kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.172488%
+[libx264 @ 0x55a62ebca3c0] frame I:1     Avg QP:20.78  size:110909
+[libx264 @ 0x55a62ebca3c0] frame P:65    Avg QP:26.83  size: 24128
+[libx264 @ 0x55a62ebca3c0] frame B:174   Avg QP:31.70  size:  2800
+[libx264 @ 0x55a62ebca3c0] consecutive B-frames:  0.4%  8.3%  1.2% 90.0%  0.0%  0.0%  0.0%  0.0%  0.0%
+[libx264 @ 0x55a62ebca3c0] mb I  I16..4:  7.7%  0.0% 92.3%
+[libx264 @ 0x55a62ebca3c0] mb P  I16..4:  9.2%  0.0%  0.0%  P16..4: 77.4%  0.0%  0.0%  0.0%  0.0%    skip:13.4%
+[libx264 @ 0x55a62ebca3c0] mb B  I16..4:  0.4%  0.0%  0.0%  B16..8: 19.7%  0.0%  0.0%  direct: 3.1%  skip:76.8%  L0:22.4% L1:36.6% BI:41.0%
+[libx264 @ 0x55a62ebca3c0] final ratefactor: 26.36
+[libx264 @ 0x55a62ebca3c0] direct mvs  spatial:61.5% temporal:38.5%
+[libx264 @ 0x55a62ebca3c0] coded y,uvDC,uvAC intra: 61.6% 30.6% 8.9% inter: 14.6% 3.4% 0.1%
+[libx264 @ 0x55a62ebca3c0] i16 v,h,dc,p: 31% 25% 35%  9%
+[libx264 @ 0x55a62ebca3c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 19%  9%  7%  8%  8%  9%  7% 11%
+[libx264 @ 0x55a62ebca3c0] i8c dc,h,v,p: 66% 14% 17%  3%
+[libx264 @ 0x55a62ebca3c0] Weighted P-Frames: Y:9.2% UV:0.0%
+[libx264 @ 0x55a62ebca3c0] kb/s:1733.14
+ffmpeg version 3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 6.3.1 (GCC) 20170306
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-avisynth --enable-avresample --enable-fontconfig --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-libass --enable-libbluray --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libiec61883 --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxvid --enable-netcdf --enable-shared --enable-version3
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libavresample   3.  5.  0 /  3.  5.  0
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[rawvideo @ 0x56089f78d720] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from '/run/media/john_tukey/download/datasets/5c1dataset/tears.of.steel.end.24.1280x534.420':
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 196853 kb/s
+    Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1280x534, 196853 kb/s, 24 tbr, 24 tbn, 24 tbc
+Please use -profile:a or -profile:v, -profile is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x56089f799ec0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x56089f799ec0] profile High, level 5.0
+[libx264 @ 0x56089f799ec0] 264 - core 148 r2748 97eaef2 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=10 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=8 b_pyramid=2 b_adapt=2 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=60 rc=2pass mbtree=1 bitrate=1792 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 cplxblur=20.0 qblur=0.5 ip_ratio=1.40 aq=1:0.00
+Output #0, mp4, to './out/encoded/tears.of.steel.end.24.1280x534.420_1792.mp4':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 1280x534, q=-1--1, 1792 kb/s, 24 fps, 12288 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/1792000 buffer size: 0 vbv_delay: -1
+frame=   37 fps=0.0 q=31.0 PSNR=Y:nan U:nan V:nan *:nan size=     191kB time=00:00:00.58 bitrate=2676.7kbits/s speed=1.07x    frame=   51 fps= 49 q=31.0 PSNR=Y:nan U:nan V:nan *:nan size=     299kB time=00:00:01.16 bitrate=2102.6kbits/s speed=1.11x    frame=   66 fps= 42 q=31.0 PSNR=Y:nan U:nan V:nan *:nan size=     445kB time=00:00:01.79 bitrate=2034.1kbits/s speed=1.15x    frame=   82 fps= 40 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=     578kB time=00:00:02.45 bitrate=1927.0kbits/s speed=1.19x    frame=   97 fps= 37 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=     717kB time=00:00:03.08 bitrate=1904.3kbits/s speed=1.16x    frame=  113 fps= 34 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=     870kB time=00:00:03.75 bitrate=1900.5kbits/s speed=1.14x    frame=  130 fps= 34 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1029kB time=00:00:04.45 bitrate=1889.9kbits/s speed=1.17x    frame=  144 fps= 33 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1155kB time=00:00:05.04 bitrate=1876.2kbits/s speed=1.17x    frame=  161 fps= 32 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1313kB time=00:00:05.75 bitrate=1871.3kbits/s speed=1.15x    frame=  179 fps= 32 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1467kB time=00:00:06.50 bitrate=1849.3kbits/s speed=1.17x    frame=  191 fps= 32 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1561kB time=00:00:07.00 bitrate=1826.7kbits/s speed=1.16x    frame=  207 fps= 32 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1698kB time=00:00:07.66 bitrate=1814.8kbits/s speed=1.17x    frame=  221 fps= 31 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1821kB time=00:00:08.25 bitrate=1808.0kbits/s speed=1.17x    frame=  234 fps= 31 q=30.0 PSNR=Y:nan U:nan V:nan *:nan size=    1941kB time=00:00:08.79 bitrate=1808.4kbits/s speed=1.16x    frame=  240 fps= 29 q=-1.0 LPSNR=Y:inf U:inf V:inf *:inf size=    2152kB time=00:00:09.87 bitrate=1784.9kbits/s speed=1.19x    
+video:2148kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.170129%
+[libx264 @ 0x56089f799ec0] frame I:1     Avg QP:23.49  size: 83765  PSNR Mean Y:41.98 U:47.14 V:48.04 Avg:43.18 Global:43.18
+[libx264 @ 0x56089f799ec0] frame P:65    Avg QP:26.17  size: 23588  PSNR Mean Y:39.50 U:47.38 V:48.11 Avg:40.94 Global:40.92
+[libx264 @ 0x56089f799ec0] frame B:174   Avg QP:30.79  size:  3344  PSNR Mean Y:38.88 U:47.40 V:48.13 Avg:40.36 Global:40.34
+[libx264 @ 0x56089f799ec0] consecutive B-frames:  0.4%  8.3%  1.2% 90.0%  0.0%  0.0%  0.0%  0.0%  0.0%
+[libx264 @ 0x56089f799ec0] mb I  I16..4:  3.8% 64.1% 32.1%
+[libx264 @ 0x56089f799ec0] mb P  I16..4:  2.2%  3.8%  3.2%  P16..4: 39.9% 21.8% 15.7%  2.1%  0.2%    skip:11.1%
+[libx264 @ 0x56089f799ec0] mb B  I16..4:  0.1%  0.2%  0.2%  B16..8: 35.6%  6.8%  1.2%  direct: 1.0%  skip:54.9%  L0:30.2% L1:46.1% BI:23.7%
+[libx264 @ 0x56089f799ec0] 8x8 transform intra:44.1% inter:39.7%
+[libx264 @ 0x56089f799ec0] direct mvs  spatial:70.1% temporal:29.9%
+[libx264 @ 0x56089f799ec0] coded y,uvDC,uvAC intra: 60.1% 37.5% 8.6% inter: 13.2% 4.4% 0.1%
+[libx264 @ 0x56089f799ec0] i16 v,h,dc,p: 25% 27% 28% 19%
+[libx264 @ 0x56089f799ec0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 13% 26%  5%  5%  5%  6%  5%  9%
+[libx264 @ 0x56089f799ec0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 13% 19%  4%  6%  5%  6%  5%  8%
+[libx264 @ 0x56089f799ec0] i8c dc,h,v,p: 57% 20% 16%  7%
+[libx264 @ 0x56089f799ec0] Weighted P-Frames: Y:9.2% UV:0.0%
+[libx264 @ 0x56089f799ec0] ref P L0: 68.1% 20.3%  8.1%  1.1%  0.6%  0.4%  0.4%  0.2%  0.2%  0.2%  0.1%  0.1%  0.1%  0.1%  0.1%  0.1%
+[libx264 @ 0x56089f799ec0] ref B L0: 98.0%  1.1%  0.4%  0.1%  0.1%  0.1%  0.1%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%  0.0%
+[libx264 @ 0x56089f799ec0] ref B L1: 99.5%  0.5%
+[libx264 @ 0x56089f799ec0] PSNR Mean Y:39.057 U:47.395 V:48.122 Avg:40.530 Global:40.502 kb/s:1759.03

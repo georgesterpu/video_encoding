@@ -73,7 +73,7 @@ def get_stats_by_file(stats):
 
 
 def main():
-    _filesDir = './subjective/'
+    _filesDir = './data/'
     _files = ('2015','2016','2017')
 
     _stats = collect_points(_files, _filesDir)
